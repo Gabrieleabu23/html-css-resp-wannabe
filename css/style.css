@@ -127,7 +127,75 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
- 
+
+/* 
+    Mobile Version
+*/
+@media all and (max-width:480px){
+    /* 
+        DA FLEX A BLOCK
+    */
+    .row{
+        display: block;
+    }
+    /* 
+        PARTE RELATIVA AI MARGINI E AL COLORE
+    */
+    section.steps,
+    section.lessons{
+        margin: 0;
+        padding: 3rem 0;
+    }
+    section.why-us{
+        margin: 0;
+        padding: 3rem 0;
+    }
+    h3{
+        margin: 30px 0;
+    }
+    /* 
+        FINE PARTE RELATIVA AI MARGINI E AL COLORE
+    */
+    
+    /* 
+        AUMENTO FONT E ALTEZZA IMMAGINE
+    */
+    .lessons .col {
+        width: 100%;
+        margin-top: 80px;
+        font-size: 20px;
+    }
+    .steps .col {
+        width: 100%;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .steps .col img,
+    .lessons .col img {
+        height: 300px;
+    }
+    .why-us .col-left,
+    .why-us .col-right{
+        width: 100%;
+        font-size: 20px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    /* 
+      BACKGROUND ULTIMA SEZIONE COLORE NERO*/
+    .why-us{
+        background-color: #222222;
+    }
+    
+}
+
  /* 
     Tablet version
  */
